@@ -6,20 +6,24 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Java',
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'New Features',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Local variable type inference', slug: 'java-new-features/local-variable-type-inference' },
+						{ label: 'Record', slug: 'java-new-features/record' }
+
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+					label: 'Stream',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Stream Coding QnA', slug: 'java-stream/java-stream-coding' }
+					],
+				}
 			],
 		}),
 	],
