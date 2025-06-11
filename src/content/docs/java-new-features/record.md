@@ -123,3 +123,20 @@ record Transaction(String transactionId, int amount) {
   }
 }
 ```
+
+- Record cannot extend any class, including sealed classes, but can implement interfaces, including the sealed interfaces.
+
+```java
+class Base {}
+
+record Sub() extends Base {} //will not compile
+```
+
+```java
+interface Parent {}
+
+record Sub() implements Parent {} //compiles
+```
+
+## Reference 
+(JEP 395)[https://openjdk.java.net/jeps/395]
