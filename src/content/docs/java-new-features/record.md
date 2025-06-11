@@ -139,4 +139,4 @@ record Sub() implements Parent {} //compiles
 ```
 
 ## Reference 
-(JEP 395)[https://openjdk.java.net/jeps/395]
+- [JEP 395](https://openjdk.java.net/jeps/395)

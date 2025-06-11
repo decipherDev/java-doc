@@ -23,3 +23,6 @@ _Added in Java 10_
 ```Java
     var<String> names = new ArrayList<>(); //ERROR
 ```
+
+## References
+- [JEP286](https://openjdk.org/jeps/286)

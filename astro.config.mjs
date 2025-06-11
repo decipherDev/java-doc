@@ -13,7 +13,8 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Local variable type inference', slug: 'java-new-features/local-variable-type-inference' },
-						{ label: 'Record', slug: 'java-new-features/record' }
+						{ label: 'Record', slug: 'java-new-features/record' },
+						{ label: 'Sealed Classes', slug: 'java-new-features/sealed-classes' }
 
 					],
 				},
