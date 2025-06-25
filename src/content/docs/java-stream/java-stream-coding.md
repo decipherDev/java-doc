@@ -155,3 +155,25 @@ Arrays.stream(arr)
 ```
 7
 ```
+
+## Find the largest repeating word from the list of strings
+
+```java
+List<String> words = List.of("Red", "Orange", "Blue", "Red", "Red", "Blue", "Blue", "Red", "Red");
+String highestFreqWord = words.stream()
+							  .collect(
+									Collectors.groupingBy(
+										s -> s,
+										Collectors.counting())
+							   ).entrySet()
+							   .stream()
+							   .max(Comparator.comparing(
+									Map.Entry::getValue)
+							   ).get()
+							   .getKey();
+```
+#### output
+
+```
+highestFreqWord ==> "Red"
+```
